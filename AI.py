@@ -1,5 +1,7 @@
+import random
+from Player import Player
 
-class AI:
-
+class AI(Player):
     def __init__(self):
-        pass
+        super().__init__(self)
+    pass
