@@ -8,14 +8,16 @@ class Game:
         self.player2 = AI()
     
     def run_game(self):
-      print(f"Welcome to the game of RPSLS")
+      self.display_welcome()
       self.player1.choose_gesture()
       self.player2.choose_gesture()
-
       self.display_rules()
       self.player1.choose_gesture()
       print(self.player1.chosen_gesture)
       self.display_winner()
+
+    def display_welcome(self):
+     print(f"Welcome to the game of RPSLS")
 
     def display_rules(self):
         print("Here are the rules to the game:")
