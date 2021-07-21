@@ -1,8 +1,8 @@
+import random
 
-class player:
  
  
- class Player:
+class Player:
   def __init__(self,name):
         self.name = name
         self.gestures_list = ["rock","paper","scissor","lizard","spock"]
